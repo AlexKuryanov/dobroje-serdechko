@@ -128,3 +128,102 @@ img {
   font-size: 6rem;
   line-height: 9rem;
 }
+
+/* Header */
+.header-top {
+  padding-top: 3.3rem;
+  padding-bottom: 2.3rem;
+}
+
+.header-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-links-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.links-bar-link {
+  position: relative;
+  padding-left: 5.2rem;
+  transition: all 0.3s linear;
+}
+
+/*TODO hover*/
+.links-bar-link:hover {
+  text-decoration: underline;
+}
+
+.links-bar-link::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: 0;
+  display: block;
+  width: 4.2rem;
+  height: 4.2rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: translateY(50%);
+}
+
+.email-link {
+  margin-right: 3.9rem;
+}
+
+.email-link::before {
+  background-image: url(../assets/images/icons/email-icon.svg);
+}
+
+.phone-link {
+  margin-right: 7.9rem;
+}
+
+.phone-link::before {
+  background-image: url(../assets/images/icons/phone-icon.svg);
+}
+
+.social-link-telegram {
+  display: block;
+  width: 4.2rem;
+  height: 4.2rem;
+  margin-right: 8.9rem;
+  background-image: url(../assets/images/icons/telegram-icon.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.social-link-vkontakte {
+  display: block;
+  width: 4.2rem;
+  height: 4.2rem;
+  background-image: url(../assets/images/icons/vkontakte-icon.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.page-nav {
+  padding: 1.5rem;
+  background-color: var(--basic-white);
+}
+
+.nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 5rem;
+  max-width: calc(100% - 31.6rem);
+}
+
+.tohelp-btn {
+  padding-top: 1.3rem;
+  padding-inline: 5.2rem;
+  padding-bottom: 1.1rem;
+  background-color: var(--red);
+}
