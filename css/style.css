@@ -227,3 +227,28 @@ img {
   padding-bottom: 1.1rem;
   background-color: var(--red);
 }
+
+/* Footer */
+.footer-container {
+  position: relative;
+}
+
+/* Scroll to top button */
+.scroll-up {
+  /* display: none; */
+  width: 42px;
+  height: 42px;
+
+  /* position: fixed;
+  bottom: 50px;
+  right: 0px; */
+
+  fill: var(--basic-white);
+  stroke: var(--dark-gray);
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+.scroll-up:hover {
+  fill: var(--violet-pastel);
+}
