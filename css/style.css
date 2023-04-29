@@ -12,3 +12,119 @@
   --red: #fb2e42;
   --yellowgreen: rgba(181, 239, 46, 0.7);
 }
+
+/* Global */
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+.page-body {
+  display: grid;
+  /* minmax(7rem, 18rem) */
+  grid-template-rows: max-content 1fr minmax(25.8rem, 37rem);
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 2rem;
+  line-height: 2.3rem;
+  background-color: var(--violet-main);
+}
+
+.page-title {
+  font-family: "VremenaGrotesk", sans-serif;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  color: var(--basic-black);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  max-width: 155rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  box-sizing: border-box;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.link {
+  padding: 1rem;
+  font-family: Aqum, "Comic Sans", cursive;
+  font-size: 1.8rem;
+  line-height: 2.3rem;
+  text-decoration: none;
+  transition: all 0.3s linear;
+}
+
+.link-dark {
+  color: var(--basic-black);
+}
+
+.link-light {
+  color: var(--basic-white);
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Aqum, "Comic Sans", cursive;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.btn {
+  padding: 1rem 5.2rem;
+  font-family: Aqum, "Comic Sans", cursive;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  color: var(--basic-white);
+  border-radius: 3rem;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+.section {
+  padding-top: 5rem;
+  padding-bottom: 10rem;
+}
+
+.section-dark {
+  background-color: var(--violet-main);
+}
+
+.section-light {
+  background-color: var(--basic-white);
+}
+
+.section-title {
+  margin: 0;
+  padding: 0;
+  font-size: 6rem;
+  line-height: 9rem;
+}
