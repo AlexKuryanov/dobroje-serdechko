@@ -1,0 +1,49 @@
+@font-face {
+  font-family: Aqum;
+  src: local("Aqum"), url("../assets/fonts/Aqum.woff2") format("woff2"),
+    url("../assets/fonts/Aqum.woff") format("woff"),
+    url("../assets/fonts/Aqum.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: VremenaGrotesk;
+  src: url("../assets/fonts/VremenaGrotesk.woff2") format("woff2"),
+    url("../assets/fonts/VremenaGrotesk.woff") format("woff"),
+    url("../assets/fonts/VremenaGrotesk.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url("../assets/fonts/Roboto.woff2") format("woff2"),
+    url("../assets/fonts/Roboto.woff") format("woff"),
+    url("../assets/fonts/Roboto.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url("../assets/fonts/Robotolight.woff2") format("woff2"),
+    url("../assets/fonts/Robotolight.woff") format("woff"),
+    url("../assets/fonts/Robotolight.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url("../assets/fonts/Robotomedium.woff2") format("woff2"),
+    url("../assets/fonts/Robotomedium.woff") format("woff"),
+    url("../assets/fonts/Robotomedium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
