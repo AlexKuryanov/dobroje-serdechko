@@ -251,16 +251,76 @@ img {
   transform: translateX(-100%);
   transition: transform 0.5s ease;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+
+  /* TODO - define column-gap */
+  column-gap: 14rem;
+
+  border-radius: 1rem;
 }
 
-.slide img {
-  max-width: 100%;
+.article-img {
+  max-width: auto;
   max-height: 100%;
-  position: absolute;
+  /* position: absolute; */
+  border-radius: 1rem;
   z-index: -1;
   object-fit: cover;
+}
+
+.article-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 2rem;
+  max-height: 100%;
+  margin-left: auto;
+  padding-block: 3rem;
+  padding-inline: 3.5rem;
+  font-size: 2.5rem;
+  line-height: 3.6rem;
+  background-color: var(--basic-white);
+  border-radius: 1rem;
+}
+
+.article-content p {
+  margin: 0;
+}
+
+.hero-age {
+  font-family: Aqum, "Comic Sans", cursive;
+}
+
+.hero-diagnosis,
+.hero-needs {
+  font-size: 2rem;
+  line-height: 2.3rem;
+  font-weight: 400;
+}
+
+.fundraising {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 2rem;
+  text-align: center;
+}
+
+.fundraising-amount {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1rem;
+}
+
+.fundraising-sum {
+  min-width: 27rem;
+  padding-block: 1rem;
+  font-family: Aqum, "Comic Sans", cursive;
+  background-color: var(--violet-pastel);
+  border-radius: 0.7rem;
 }
 
 .labels {
