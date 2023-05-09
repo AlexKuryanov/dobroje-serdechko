@@ -230,6 +230,11 @@ img {
   background-color: var(--red);
 }
 
+/* Tohelp section */
+.tohelp-title {
+  font-size: 7rem;
+}
+
 /* Slider */
 .slider {
   width: 100%;
