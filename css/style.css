@@ -233,7 +233,7 @@ img {
 /* Slider */
 .slider {
   width: 100%;
-  aspect-ratio: 1519 / 663;
+  aspect-ratio: 1519 / 690;
   position: relative;
   overflow: hidden;
 }
@@ -267,7 +267,7 @@ img {
   width: 100%;
   height: 20px;
   position: absolute;
-  bottom: 0;
+  bottom: -1rem;
   display: flex;
   justify-content: center;
   gap: 5px;
