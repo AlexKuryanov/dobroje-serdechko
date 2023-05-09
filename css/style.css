@@ -295,6 +295,7 @@ img {
 
 .hero-diagnosis,
 .hero-needs {
+  align-self: flex-start;
   font-size: 2rem;
   line-height: 2.3rem;
   font-weight: 400;
