@@ -263,7 +263,6 @@ img {
 .article-img {
   max-width: auto;
   max-height: 100%;
-  /* position: absolute; */
   border-radius: 1rem;
   z-index: -1;
   object-fit: cover;
