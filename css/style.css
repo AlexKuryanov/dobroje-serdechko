@@ -642,6 +642,7 @@ button[type="submit"] {
 }
 
 .cta-btn {
+  background-color: var(--basic-white);
   color: var(--violet-main);
   border: 0.3rem solid var(--violet-main);
 }
