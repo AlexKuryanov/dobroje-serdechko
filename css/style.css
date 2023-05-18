@@ -3,6 +3,7 @@
 /* Variables */
 :root {
   /* Colors */
+  --black: #000000;
   --basic-black: #2c2b29;
   --basic-white: #fefefe;
   --violet-main: #666fa8;
@@ -527,11 +528,11 @@ input[type="radio"] {
 .gethelp-agreement {
   margin: 0;
   padding-left: 8.2rem;
+  color: var(--basic-black);
 }
 
 .gethelp-questions {
   margin-bottom: 4rem;
-  color: var(--basic-black);
 }
 
 .gethelp-link {
@@ -551,6 +552,8 @@ input[type="radio"] {
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 119%;
+}
+
 /* Team-section */
 .team-title {
   margin-bottom: 1rem;
