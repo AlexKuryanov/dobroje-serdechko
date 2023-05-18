@@ -643,6 +643,11 @@ input[type="radio"] {
   margin-bottom: 1.5rem;
 }
 
+.whatishelp-intro {
+  font-size: 4rem;
+  line-height: 150%;
+}
+
 .cards-swiper {
   display: flex;
   flex-wrap: wrap;
