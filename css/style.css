@@ -106,6 +106,7 @@ h6 {
   color: var(--basic-white);
   border-radius: 3rem;
   text-decoration: none;
+  cursor: pointer;
 }
 
 img {
