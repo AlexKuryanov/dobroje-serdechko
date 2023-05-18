@@ -480,6 +480,78 @@ input[type="radio"] {
   border-radius: 0.7rem;
 }
 
+/* Gethelp section */
+.gethelp-form {
+  max-width: 132.8rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+}
+
+.gethelp-input,
+.gethelp-message {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.gethelp-input {
+  margin-bottom: 1.6rem;
+  padding-block: 1rem;
+}
+
+.gethelp-message {
+  margin-bottom: 4rem;
+}
+
+::placeholder {
+  padding-top: 1rem;
+  padding-left: 4rem;
+}
+
+.user-docs-label {
+  width: 100%;
+  display: flex;
+  height: 4.2rem;
+  margin-bottom: 3rem;
+  background-image: url(../assets/images/icons/download-icon.svg);
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.user-docs-input {
+  display: none;
+}
+
+.user-docs-text,
+.gethelp-questions,
+.gethelp-agreement {
+  margin: 0;
+  padding-left: 8.2rem;
+}
+
+.gethelp-questions {
+  margin-bottom: 4rem;
+}
+
+.gethelp-link {
+  font-weight: 400;
+  color: var(--basic-black);
+}
+
+.gethelp-btn {
+  justify-self: start;
+  margin-bottom: 1.3rem;
+  color: var(--red);
+  border: 0.2rem solid var(--red);
+  cursor: pointer;
+}
+
+.gethelp-agreement {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 119%;
+}
+
 /* Footer */
 .footer-container {
   position: relative;

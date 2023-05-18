@@ -259,6 +259,7 @@
             /></label>
             <label class="gethelp-label" for="user-email">
               <input
+              class="gethelp-input"
                 type="email"
                 name="user-email"
                 id="user-email"
@@ -275,15 +276,15 @@
                 placeholder="Кратко опишите Вашу проблему...."
               ></textarea>
             </label>
-            <label class="gethelp-label" for="user-docs">
+            <label class="gethelp-label user-docs-label" for="user-docs">
               <input
-                class="gethelp-input"
+                class="gethelp-input user-docs-input"
                 type="file"
                 name="user-docs"
                 id="user-docs"
               />
-              <span
-                >Прикрепите необходимые документы (выписки из мед.учреждений,
+              <span class="user-docs-text"
+                >Прикрепите необходимые документы <br> (выписки из мед.учреждений,
                 фото и другие подтверждающие материалы)</span
               >
             </label>
@@ -294,11 +295,11 @@
             <button class="btn btn-outline gethelp-btn" type="submit">
               прошу помощи
             </button>
-            <p class="agreement">
+            <p class="gethelp-agreement">
               Нажимая на кнопку, Вы соглашаетесь с
-              <a class="policy" href="">Политикой конфиденциальности</a>
+              <a class="gethelp-link policy" href="">Политикой конфиденциальности</a> <br>
               и даёте согласие на
-              <a class="personal-data" href="">обработку персональных данных</a>
+              <a class="gethelp-link personal-data" href="">обработку персональных данных</a>
             </p>
           </form>
         </div>
