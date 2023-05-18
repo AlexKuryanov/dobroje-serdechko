@@ -491,18 +491,21 @@ input[type="radio"] {
   grid-template-rows: auto;
 }
 
-.gethelp-input,
-.gethelp-message {
+.form-input,
+.form-message {
   width: 100%;
+  background-color: var(--basic-white);
+  border-color: transparent;
+  border-radius: 0.4rem;
   box-sizing: border-box;
 }
 
-.gethelp-input {
+.form-input {
   margin-bottom: 1.6rem;
   padding-block: 1rem;
 }
 
-.gethelp-message {
+.form-message {
   margin-bottom: 4rem;
 }
 
@@ -537,20 +540,23 @@ input[type="radio"] {
   margin-bottom: 4rem;
 }
 
-.gethelp-link {
+.agreement-link {
   font-weight: 400;
   color: var(--basic-black);
 }
 
 .gethelp-btn {
-  justify-self: start;
   margin-bottom: 1.3rem;
   color: var(--red);
   border: 0.2rem solid var(--red);
   cursor: pointer;
 }
 
-.gethelp-agreement {
+button[type="submit"] {
+  justify-self: start;
+}
+
+.agreement {
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 119%;
