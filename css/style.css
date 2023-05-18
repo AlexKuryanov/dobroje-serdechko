@@ -743,6 +743,56 @@ button[type="submit"] {
   background-color: var(--violet-blue);
 }
 
+/* Forpartners section */
+.forpartners-title {
+  margin-bottom: 0;
+}
+
+.forpartners-intro {
+  max-width: 93.2rem;
+  margin: 0 auto;
+  margin-bottom: 5.3rem;
+  font-family: Roboto, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 115%;
+  color: var(--black);
+}
+
+.forpartners-cta-block {
+  column-gap: 17.5rem;
+  max-width: 100%;
+  margin: 0;
+  margin-bottom: 3.8rem;
+}
+
+.forpartners-cta-block .cta-text {
+  min-width: 57.3rem;
+}
+
+.cta-subtitle {
+  max-width: 67.3rem;
+  margin-bottom: 2.5rem;
+  font-family: Aqum, "Comic Sans", cursive;
+  font-size: 1.8rem;
+}
+
+.partners-form {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  max-width: 100.5rem;
+}
+
+.partners-form-input,
+.partners-form-message {
+  border: 0.1rem solid var(--dark-gray);
+}
+
+.partner-agreement {
+  padding-left: 4rem;
+}
+
 /* Footer */
 .footer-container {
   position: relative;
