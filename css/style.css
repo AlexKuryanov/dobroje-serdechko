@@ -296,6 +296,7 @@ img {
   line-height: 3.6rem;
   background-color: var(--basic-white);
   border-radius: 1rem;
+  box-shadow: 4px 4px 4px rgba(82, 91, 146, 0.5);
 }
 
 .article-content p {
