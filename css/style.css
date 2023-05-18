@@ -132,6 +132,14 @@ img {
   line-height: 9rem;
 }
 
+.section-intro {
+  margin: 0;
+  margin-bottom: 4rem;
+  font-family: Aqum, "Comic Sans", cursive;
+  font-size: 3rem;
+  line-height: 120%;
+}
+
 /* Header */
 .header-top {
   padding-top: 3.3rem;
