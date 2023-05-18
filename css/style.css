@@ -563,6 +563,10 @@ button[type="submit"] {
 }
 
 /* Team-section */
+.team {
+  text-align: center;
+}
+
 .team-title {
   margin-bottom: 1rem;
   font-size: 4rem;
