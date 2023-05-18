@@ -24,8 +24,7 @@ html {
 
 .page-body {
   display: grid;
-  /* minmax(7rem, 18rem) */
-  grid-template-rows: max-content 1fr minmax(25.8rem, 37rem);
+  grid-template-rows: max-content 1fr min-content;
   margin: 0;
   padding: 0;
   font-family: Roboto, Helvetica, sans-serif;
@@ -886,8 +885,41 @@ button[type="submit"] {
 }
 
 /* Footer */
+.page-footer {
+  padding-top: 8.1rem;
+  padding-bottom: 10.9rem;
+  color: var(--basic-white);
+  background-color: var(--basic-black);
+}
+
 .footer-container {
   position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copyright-pic {
+  width: 3.1rem;
+  height: 3.1rem;
+  background-image: url(../assets/images/content/copyright.svg);
+  background-repeat: no-repeat;
+}
+
+.footer-nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 87.2rem;
+  gap: 2.2rem 1.8rem;
+}
+
+.footer-nav-link {
+  font-family: Aqum, "Comic Sans", cursive;
+  font-size: 1.8rem;
+  line-height: 128%;
+  color: var(--basic-white);
+  text-decoration: none;
 }
 
 /* Scroll to top button */
