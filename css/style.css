@@ -531,6 +531,7 @@ input[type="radio"] {
 
 .gethelp-questions {
   margin-bottom: 4rem;
+  color: var(--basic-black);
 }
 
 .gethelp-link {
@@ -550,6 +551,7 @@ input[type="radio"] {
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 119%;
+  color: var(--basic-black);
 }
 
 /* Footer */
