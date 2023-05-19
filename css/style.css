@@ -9,9 +9,13 @@
   --violet-main: #666fa8;
   --violet-pastel: #97a2e1;
   --violet-blue: #606fc2;
+  --filled-btn-hover: #97a2e1;
+  --outline-btn-hover: #606fc2;
   --dark-gray: #676a74;
   --img-bg: #d9d9d9;
   --red: #fb2e42;
+  --red-hover: rgba(251, 46, 66, 0.5);
+  --red-disabled: #ff8a80;
   --yellowgreen: rgba(181, 239, 46, 0.7);
 }
 
@@ -106,6 +110,7 @@ h6 {
   border-radius: 3rem;
   text-decoration: none;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 img {
@@ -941,4 +946,56 @@ button[type="submit"] {
 
 .scroll-up:hover {
   fill: var(--violet-pastel);
+}
+
+/* Interactivity states */
+.btn:active {
+  filter: blur(2px);
+}
+
+.btn:disabled {
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
+.disabled {
+  pointer-events: none;
+}
+
+.tohelp-btn:hover {
+  box-shadow: 4px 4px 7px var(--red-hover), -4px -4px 7px var(--red-hover);
+}
+
+.tohelp-btn.disabled {
+  background-color: var(--red-disabled);
+}
+
+.btn-outline:hover {
+  box-shadow: 4px 4px 7px var(--outline-btn-hover),
+    -4px -4px 7px var(--outline-btn-hover);
+  box-shadow: 4px 4px 7px var(--filled-btn-hover),
+    -4px -4px 7px var(--filled-btn-hover);
+}
+
+.partner-btn:hover {
+  box-shadow: 4px 4px 7px var(--filled-btn-hover),
+    -4px -4px 7px var(--filled-btn-hover);
+}
+
+.gethelp-btn:hover {
+  box-shadow: 4px 4px 7px var(--red-hover), -4px -4px 7px var(--red-hover);
+}
+
+.gethelp-btn.disabled {
+  color: var(--red-disabled);
+  border-color: var(--red-disabled);
+}
+
+.cta-btn.disabled {
+  color: var(--violet-pastel);
+  border-color: var(--violet-pastel);
+}
+
+.partner-btn.disabled {
+  background-color: var(--violet-pastel);
 }
