@@ -226,6 +226,11 @@ img {
 }
 
 .page-nav {
+  position: fixed;
+  top: 125px;
+  left: 0;
+  right: 0;
+  z-index: 4;
   padding: 1.5rem;
   background-color: var(--basic-white);
 }
@@ -247,6 +252,10 @@ img {
 }
 
 /* Tohelp section */
+.tohelp {
+  padding-top: 12rem;
+}
+
 .tohelp-title {
   font-size: 7rem;
 }
