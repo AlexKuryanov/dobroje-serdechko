@@ -746,6 +746,7 @@ button[type="submit"] {
   background-repeat: no-repeat;
   border: none;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .swiper-btn-prev {
@@ -1027,4 +1028,16 @@ button[type="submit"] {
 
 .partner-btn.disabled {
   background-color: var(--violet-pastel);
+}
+
+.swiper-btn:hover {
+  transform: scale(1.1);
+}
+
+.swiper-btn-prev:hover {
+  transform: rotate(180deg) scale(1.1);
+}
+
+.swiper-btn:active {
+  filter: blur(2px);
 }
