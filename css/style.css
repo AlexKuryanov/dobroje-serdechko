@@ -522,6 +522,8 @@ input[type="radio"] {
 .form-input,
 .form-message {
   width: 100%;
+  padding-top: 1rem;
+  padding-left: 4rem;
   background-color: var(--basic-white);
   border-color: transparent;
   border-radius: 0.4rem;
@@ -535,11 +537,6 @@ input[type="radio"] {
 
 .form-message {
   margin-bottom: 4rem;
-}
-
-::placeholder {
-  padding-top: 1rem;
-  padding-left: 4rem;
 }
 
 .user-docs-label {
