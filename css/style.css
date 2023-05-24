@@ -84,6 +84,14 @@ html {
   color: var(--basic-black);
 }
 
+.link-dark:hover {
+  color: var(--dark-gray);
+}
+
+.link-dark:active {
+  filter: blur(2px);
+}
+
 .link-light {
   color: var(--basic-white);
 }
@@ -450,12 +458,18 @@ input[type="radio"] {
   padding-bottom: 2.2rem;
   padding-left: 2.8rem;
   background-color: var(--basic-white);
-  box-shadow: 4px 4px 4px 4px #97a2e1;
+  box-shadow: 4px 4px 4px 4px var(--filled-btn-hover);
   border-radius: 15px;
+  transition: all 0.3s ease;
 }
 
 .links-item:hover {
   cursor: pointer;
+  box-shadow: 6px 6px 12px 6px var(--filled-btn-hover);
+}
+
+.links-item:active {
+  filter: blur(3px);
 }
 
 .links-border {
@@ -935,6 +949,15 @@ button[type="submit"] {
   line-height: 128%;
   color: var(--basic-white);
   text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.footer-nav-link:hover {
+  color: var(--violet-pastel);
+}
+
+.footer-nav-link:active {
+  filter: blur(2px);
 }
 
 /* Scroll to top button */
