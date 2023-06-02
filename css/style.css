@@ -147,12 +147,21 @@ img {
   line-height: 9rem;
 }
 
+.section-title-small {
+  font-size: 4rem;
+  line-height: 150%;
+}
+
 .section-intro {
   margin: 0;
   margin-bottom: 4rem;
   font-family: Aqum, "Comic Sans", cursive;
   font-size: 3rem;
   line-height: 120%;
+}
+
+.bold {
+  font-weight: 500;
 }
 
 /* Header */
@@ -250,6 +259,8 @@ img {
   align-items: center;
   column-gap: 5rem;
   max-width: calc(100% - 31.6rem);
+  /* max-width: 1162px;
+  min-width: 951px; */
 }
 
 .tohelp-btn {
@@ -594,8 +605,6 @@ button[type="submit"] {
 
 .team-title {
   margin-bottom: 1rem;
-  font-size: 4rem;
-  line-height: 150%;
 }
 
 .team-intro {
@@ -1040,4 +1049,54 @@ button[type="submit"] {
 
 .swiper-btn:active {
   filter: blur(2px);
+}
+
+/* Inner page about */
+.intro-description {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 10rem;
+}
+
+.fund-name {
+  grid-column: 1 / -1;
+  font-size: 3rem;
+  line-height: 140%;
+  font-weight: 500;
+  color: var(--basic-black);
+}
+
+.goal-text {
+  margin-top: 0;
+}
+
+.intro-img {
+  grid-column: 2 / -1;
+  grid-row: 3 / span 2;
+}
+
+.intro-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  box-shadow: 4px 4px 20px 5px rgba(8, 14, 47, 0.25);
+}
+
+.intro-goal-and-mission {
+  grid-row: 3 / 4;
+}
+
+.link-more {
+  padding: 0;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  color: var(--basic-black);
+  text-decoration: underline;
+}
+
+.volunteer-btn {
+  justify-self: start;
+  align-self: end;
 }
