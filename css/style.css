@@ -196,9 +196,10 @@ img {
   transition: all 0.3s linear;
 }
 
-/*TODO hover*/
 .links-bar-link:hover {
+  color: var(--black);
   text-decoration: underline;
+  text-decoration-thickness: 2px;
 }
 
 .links-bar-link::before {
