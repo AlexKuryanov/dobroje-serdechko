@@ -179,10 +179,9 @@ img {
 }
 
 .header-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  column-gap: 9rem;
 }
 
 .header-links-bar {
