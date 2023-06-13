@@ -265,10 +265,6 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  column-gap: 5rem;
-  max-width: calc(100% - 31.6rem);
-  /* max-width: 1162px;
-  min-width: 951px; */
 }
 
 .tohelp-btn {
