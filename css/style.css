@@ -76,7 +76,7 @@ html {
 }
 
 .link {
-  padding: 1rem;
+  /* padding: 1rem; */
   font-family: Aqum, "Comic Sans", cursive;
   font-size: 1.8rem;
   line-height: 2.3rem;
@@ -180,18 +180,19 @@ img {
 
 .header-container {
   display: grid;
-  grid-template-columns: 1fr max-content;
-  column-gap: 9rem;
+  grid-template-columns: 230px 1fr;
 }
 
 .header-links-bar {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  margin-left: auto;
 }
 
 .links-bar-link {
   position: relative;
+  padding: 1rem;
   padding-left: 5.2rem;
   transition: all 0.3s linear;
 }
@@ -245,6 +246,7 @@ img {
   display: block;
   width: 4.2rem;
   height: 4.2rem;
+  padding-left: 0;
   background-image: url(../assets/images/icons/vkontakte-icon.svg);
   background-position: center;
   background-repeat: no-repeat;
@@ -258,6 +260,12 @@ img {
   z-index: 4;
   padding: 1.5rem;
   background-color: var(--basic-white);
+}
+
+.nav-container {
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  column-gap: 9rem;
 }
 
 .nav-list {
@@ -314,11 +322,12 @@ img {
 }
 
 .article-img {
-  max-width: auto;
-  max-height: 100%;
+  max-width: 100%;
+  height: 58.9rem;
   border-radius: 1rem;
   z-index: -1;
   object-fit: cover;
+  overflow: hidden;
 }
 
 .article-content {
@@ -327,7 +336,7 @@ img {
   justify-content: center;
   align-items: center;
   row-gap: 2rem;
-  max-height: 100%;
+  height: 58.9rem;
   margin-left: auto;
   padding-block: 3rem;
   padding-inline: 3.5rem;
@@ -336,6 +345,7 @@ img {
   background-color: var(--basic-white);
   border-radius: 1rem;
   box-shadow: 4px 4px 4px rgba(82, 91, 146, 0.5);
+  box-sizing: border-box;
 }
 
 .article-content p {
@@ -469,13 +479,14 @@ input[type="radio"] {
   align-items: center;
   position: relative;
   padding-top: 2.2rem;
-  padding-right: 2.8rem;
+  padding-right: 1.8rem;
   padding-bottom: 2.2rem;
-  padding-left: 2.8rem;
+  padding-left: 1.8rem;
   background-color: var(--basic-white);
   box-shadow: 4px 4px 4px 4px var(--filled-btn-hover);
   border-radius: 15px;
   transition: all 0.3s ease;
+  box-sizing: border-box;
 }
 
 .links-item:hover {
@@ -504,7 +515,7 @@ input[type="radio"] {
   background-color: var(--violet-pastel);
   position: absolute;
   top: 44px;
-  left: 60px;
+  left: 40px;
   border-radius: 1rem;
   z-index: 0;
 }
@@ -1209,4 +1220,71 @@ button[type="submit"] {
 
 .inner-wrap .volunteer-btn {
   align-self: flex-start;
+}
+
+/* Media queries */
+@media (max-width: 1440px) {
+  .container {
+    max-width: 124rem;
+  }
+
+  .phone-link {
+    margin-right: 3.9rem;
+  }
+
+  .social-link-telegram {
+    margin-right: 2rem;
+  }
+
+  .nav-container {
+    column-gap: 4.4rem;
+  }
+
+  .tohelp-btn {
+    padding-inline: 3.9rem;
+  }
+
+  .slider-container {
+    max-width: 155rem;
+    margin-right: 9.9rem;
+  }
+
+  .slider {
+    aspect-ratio: 1519 / 800;
+  }
+
+  .slide {
+    column-gap: 8.5rem;
+  }
+
+  .article-content {
+    min-width: 52.6rem;
+    max-width: 52.6rem;
+  }
+
+  .team-members {
+    column-gap: 2rem;
+  }
+
+  .team-member:first-child {
+    margin-left: calc((1240px - 50px - (400px * 2)) / 2);
+  }
+
+  .team-member:nth-child(3) {
+    margin-left: calc((1240px - (50px * 2) - (400px * 3)) / 2);
+  }
+
+  .cards-swiper {
+    flex-wrap: nowrap;
+    column-gap: 5.3rem;
+  }
+
+  .contacts-info {
+    column-gap: 9rem;
+  }
+
+  .scroll-up {
+    bottom: 12rem;
+    right: 10.5rem;
+  }
 }
