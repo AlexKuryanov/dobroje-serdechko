@@ -1223,7 +1223,7 @@ button[type="submit"] {
 }
 
 /* Media queries */
-@media (max-width: 1440px) {
+@media (min-width: 1270px) and (max-width: 1600px) {
   .container {
     max-width: 124rem;
   }
@@ -1250,7 +1250,7 @@ button[type="submit"] {
   }
 
   .slider {
-    aspect-ratio: 1519 / 800;
+    aspect-ratio: 1519 / 910;
   }
 
   .slide {
