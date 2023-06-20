@@ -1288,3 +1288,158 @@ button[type="submit"] {
     right: 10.5rem;
   }
 }
+
+@media (min-width: 769px) and (max-width: 1269px) {
+  .container {
+    max-width: 76.9rem;
+    box-sizing: content-box;
+  }
+
+  .page-nav {
+    padding: 1rem;
+  }
+
+  .mob-hide {
+    display: none;
+  }
+
+  .links-bar-link {
+    padding-top: 3.2rem;
+  }
+
+  .email-link {
+    margin-right: 0;
+  }
+
+  .phone-link {
+    margin-right: 0;
+  }
+
+  .social-link-telegram {
+    margin-right: 1.7rem;
+  }
+
+  .nav-item:not(:nth-last-child(n + 2)) {
+    margin-bottom: 1rem;
+  }
+
+  .tohelp-btn {
+    align-self: center;
+  }
+
+  .tohelp-title {
+    font-size: 5rem;
+    line-height: 100%;
+  }
+
+  .slider {
+    aspect-ratio: 1519 / 1900;
+  }
+
+  .slide {
+    flex-direction: column;
+    row-gap: 20px;
+    overflow: hidden;
+  }
+
+  .article-img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .article-content {
+    width: 100%;
+  }
+
+  .links-list {
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 2.6rem;
+    column-gap: 9px;
+  }
+
+  .section-title {
+    font-size: 4rem;
+  }
+
+  .section-intro {
+    font-size: 2rem;
+  }
+
+  .section-title-small {
+    font-size: 3rem;
+  }
+
+  .team-members {
+    justify-content: center;
+  }
+
+  .team-member:first-child {
+    margin-left: 0;
+  }
+
+  .team-member:nth-child(3) {
+    margin-left: 0;
+  }
+
+  .cards-swiper {
+    row-gap: 2rem;
+    column-gap: 2rem;
+  }
+
+  .card:nth-last-child(-n + 2) {
+    display: none;
+  }
+
+  .cta-btns {
+    justify-content: space-between;
+    column-gap: 0;
+  }
+
+  .forpartners-cta-block {
+    column-gap: 0;
+    row-gap: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .contacts-info {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    row-gap: 2rem;
+  }
+
+  .contacts-map {
+    grid-column: 1 / span 1;
+    grid-row: 1 / 2;
+  }
+
+  .kind-heart-contacts {
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+  }
+
+  .humanitarian-center-contacts {
+    grid-column: 1 / -1;
+    grid-row: 3 / 4;
+  }
+
+  .footer-container {
+    column-gap: 5rem;
+  }
+
+  .copyright {
+    align-self: flex-start;
+  }
+
+  .copyright-pic {
+    margin: 0;
+  }
+
+  .footer-nav-item {
+    flex-basis: 45%;
+  }
+
+  .scroll-up {
+    right: 4.5rem;
+  }
+}
