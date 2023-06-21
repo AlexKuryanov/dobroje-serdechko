@@ -1139,7 +1139,8 @@ button[type="submit"] {
   position: relative;
 }
 
-.events-container {
+.events-container,
+.humanitarian-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1446,4 +1447,141 @@ button[type="submit"] {
   .scroll-up {
     right: 4.5rem;
   }
+}
+
+
+/* VIDEO */
+
+video {
+  margin: 2.7rem;
+}
+
+.video-humanitarian {
+  max-width: 840px;
+  max-height: 530px;
+}
+
+/* HUMANITARIAN */
+
+.emph {
+  color: var(--red);
+  font-style: normal;
+}
+
+.emph-alt {
+  color: var(--violet-blue);
+}
+
+.center {
+  text-align: center;
+}
+
+.humanitarian-title {
+  margin-bottom: 1.5rem;
+}
+
+.humanitarian-center p {
+  margin-bottom: 1rem;
+}
+
+.humanitarian-center .section-title,
+.humanitarian-center .emph-alt {
+  margin-bottom: 2.5rem;
+}
+
+.humanitarian-intro {
+  font-size: 2.5rem;
+}
+
+.humantiarian-wrap {
+  padding: 0 5rem;
+}
+
+.humantiarian-wrap p {
+  margin-bottom: 2.7rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: [col] 23.5rem [col] 35rem [col] 35rem [col] 23.5rem;
+  grid-template-rows: [row] auto [row] auto [row];
+  row-gap: 3rem;
+  column-gap: 100px;
+}
+
+.humanitarian-center-info {
+  margin: 0;
+}
+
+.humanitarian-center-contacts {
+  margin: 2rem 0;
+}
+
+.grid-p {
+  grid-column: col / span 2;
+  grid-row: row;
+}
+
+.grid-addr {
+  grid-column: col 3 / span 2 ;
+	grid-row: row;
+}
+
+.grid-pic1 {
+  grid-column: col / span 2 ;
+	grid-row: row 2;
+}
+
+.grid-pic2 {
+  grid-column: col 3 / span 2 ;
+	grid-row: row 2;
+}
+
+.grid-partner {
+  grid-column: col 2;
+  grid-row: row 3;
+  text-align: center;
+}
+
+.grid-volunteer {
+  grid-column: col 3;
+  grid-row: row 3;
+}
+
+.grid-knowmore {
+  grid-column: col 4;
+  grid-row: row 3;
+  text-align: right;
+}
+
+/* BUTTONS AT THE TOP OF THE PAGE */
+
+.btn-grid-container { 
+  display: grid;
+  grid-template-columns: [col] 23.5rem [col] 35rem [col] 35rem [col] 23.5rem;
+  grid-template-rows: [row] auto;
+  row-gap: 70px;
+  column-gap: 100px;
+}
+
+.btn-grid-container .grid-partner {
+  grid-column: col 2;
+  grid-row: row;
+  text-align: right;
+  }
+  
+.btn-grid-container .grid-volunteer {
+  grid-column: col 3;
+  grid-row: row;
+  }
+  
+.btn-grid-container .grid-knowmore {
+  grid-column: col 4;
+  grid-row: row;
+  text-align: right;
+  vertical-align: center;
+}
+
+.btn, .link-more {
+  white-space: nowrap;
 }
