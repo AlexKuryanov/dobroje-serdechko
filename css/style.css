@@ -1319,6 +1319,10 @@ button[type="submit"] {
     margin-right: 1.7rem;
   }
 
+  .nav-item {
+    margin-right: 1rem;
+  }
+
   .nav-item:not(:nth-last-child(n + 2)) {
     margin-bottom: 1rem;
   }
