@@ -1308,6 +1308,14 @@ button[type="submit"] {
     bottom: 12rem;
     right: 10.5rem;
   }
+
+  .grid-pic1 {
+    grid-column: 1/-1;
+  }
+
+  .grid-pic2 {
+    display: none;
+  }
 }
 
 @media (min-width: 769px) and (max-width: 1269px) {
@@ -1648,22 +1656,7 @@ video {
 .grid-p {
   padding-left: 5rem;
 }
-/* 
-.grid-addr {
-  grid-column: col 3 / span 2;
-  grid-row: row;
-}
 
-.grid-pic1 {
-  grid-column: col / span 2;
-  grid-row: row 2;
-}
-
-.grid-pic2 {
-  grid-column: col 3 / span 2;
-  grid-row: row 2;
-}
-*/
 .grid-partner {
   justify-self: center;
 }
