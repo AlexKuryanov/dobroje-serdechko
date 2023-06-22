@@ -1311,6 +1311,11 @@ button[type="submit"] {
 
   .grid-pic1 {
     grid-column: 1/-1;
+    text-align: center;
+  }
+
+  .grid-pic1 img {
+    width: 70%;
   }
 
   .grid-pic2 {
