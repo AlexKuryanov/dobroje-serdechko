@@ -1620,12 +1620,11 @@ video {
   margin-bottom: 2.7rem;
 }
 
-.grid-container {
+.btn-grid-container {
+  width: 100%;
   display: grid;
-  grid-template-columns: [col] 23.5rem [col] 35rem [col] 35rem [col] 23.5rem;
-  grid-template-rows: [row] auto [row] auto [row];
-  row-gap: 3rem;
-  column-gap: 100px;
+  grid-template-columns: 1fr 1fr max-content;
+  align-items: center;
 }
 
 .humanitarian-center-info {
@@ -1636,11 +1635,20 @@ video {
   margin: 2rem 0;
 }
 
-.grid-p {
-  grid-column: col / span 2;
-  grid-row: row;
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  justify-items: center;
+  column-gap: 10rem;
+  row-gap: 6rem;
+  margin-bottom: 3rem;
 }
 
+.grid-p {
+  padding-left: 5rem;
+}
+/* 
 .grid-addr {
   grid-column: col 3 / span 2;
   grid-row: row;
@@ -1655,27 +1663,24 @@ video {
   grid-column: col 3 / span 2;
   grid-row: row 2;
 }
-
+*/
 .grid-partner {
-  grid-column: col 2;
-  grid-row: row 3;
-  text-align: center;
+  justify-self: center;
 }
 
 .grid-volunteer {
-  grid-column: col 3;
-  grid-row: row 3;
+  justify-self: center;
 }
 
-.grid-knowmore {
+/* .grid-knowmore {
   grid-column: col 4;
   grid-row: row 3;
   text-align: right;
-}
+} */
 
 /* BUTTONS AT THE TOP OF THE PAGE */
 
-.btn-grid-container {
+/* .btn-grid-container {
   display: grid;
   grid-template-columns: [col] 23.5rem [col] 35rem [col] 35rem [col] 23.5rem;
   grid-template-rows: [row] auto;
@@ -1699,7 +1704,7 @@ video {
   grid-row: row;
   text-align: right;
   vertical-align: center;
-}
+} */
 
 .btn,
 .link-more {
