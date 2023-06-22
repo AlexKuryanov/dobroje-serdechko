@@ -1111,6 +1111,20 @@ button[type="submit"] {
 
 .intro-goal-and-mission {
   grid-row: 3 / 4;
+  margin-bottom: 2.5rem;
+}
+
+.mission-text {
+  margin: 0;
+}
+
+.btns-block {
+  width: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  align-items: flex-start;
+  row-gap: 8.5rem;
 }
 
 .link-more {
@@ -1121,11 +1135,6 @@ button[type="submit"] {
   line-height: 1.9rem;
   color: var(--basic-black);
   text-decoration: underline;
-}
-
-.volunteer-btn {
-  justify-self: start;
-  align-self: end;
 }
 
 .gratitudes {
@@ -1141,9 +1150,14 @@ button[type="submit"] {
   justify-content: center;
   align-items: center;
   position: relative;
+  flex-direction: column;
 }
 
-.events-container,
+.gratitudes .volunteer-btn {
+  display: none;
+}
+
+.gratitudes .events-container,
 .humanitarian-container {
   display: flex;
   flex-direction: column;
@@ -1151,14 +1165,16 @@ button[type="submit"] {
 }
 
 .events-img {
+  display: block;
   margin-bottom: 4.8rem;
+  text-align: center;
 }
 
-.btns-block {
+.events .btns-block {
   width: 85%;
-  display: flex;
-  justify-content: space-between;
+  flex-direction: row;
   align-items: center;
+  margin: 0 auto;
 }
 
 .programms-container {
@@ -1419,17 +1435,26 @@ button[type="submit"] {
 
   .contacts-map {
     grid-column: 1 / span 1;
-    grid-row: 1 / 2;
+    grid-row: 2 / 3;
   }
 
   .kind-heart-contacts {
     grid-column: 1 / -1;
-    grid-row: 2 / 3;
+    grid-row: 1 / 2;
+    justify-self: start;
+    padding-left: 5rem;
   }
 
   .humanitarian-center-contacts {
     grid-column: 1 / -1;
     grid-row: 3 / 4;
+    justify-self: start;
+    padding-left: 5rem;
+  }
+
+  .socials {
+    justify-self: start;
+    padding-left: 5rem;
   }
 
   .footer-container {
@@ -1473,6 +1498,10 @@ button[type="submit"] {
     padding-top: 8.5rem;
   }
 
+  .inner .intro-description {
+    grid-template-columns: 1fr;
+  }
+
   .inner .intro-img {
     margin-bottom: 2rem;
     grid-column: auto;
@@ -1490,8 +1519,53 @@ button[type="submit"] {
     text-align: right;
   }
 
-  .intro-description .volunteer-btn {
+  .inner .volunteer-btn {
     justify-self: center;
+    align-self: center;
+  }
+
+  .btns-block,
+  .events .btns-block {
+    width: 100%;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    row-gap: 5rem;
+  }
+
+  .btns-block .link-more {
+    align-self: end;
+  }
+
+  .programms-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .section-img-block {
+    display: none;
+  }
+
+  .programms-img {
+    grid-row: 2 / 3;
+    text-align: center;
+  }
+
+  .text-block-1 {
+    grid-column: auto;
+  }
+
+  .text-block-2 {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .gratitudes-container {
+    row-gap: 5.7rem;
+  }
+
+  .gratitudes .volunteer-btn {
+    display: block;
   }
 }
 
