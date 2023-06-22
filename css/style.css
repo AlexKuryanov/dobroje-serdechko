@@ -1705,3 +1705,7 @@ video {
 .link-more {
   white-space: nowrap;
 }
+
+.humanitarian-center-info-long {
+  max-width: max-content;
+}
