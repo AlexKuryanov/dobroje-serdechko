@@ -1,5 +1,3 @@
-console.log("Slider Loaded!");
-
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
@@ -16,20 +14,12 @@ function scrollToNextSlide(carousel, element, isLast) {
     }
 }
 
-function unsetNavItemChecked(navItem) {
-    navItem.classList.remove("checked");
-}
-
-function setNavItemChecked(navItem) {
-    navItem.classList.add("checked");
-}
-
 function updateNavigation(navArray, radioArray) {
     for (let i = 0; i < radioArray.length; i++) {
         if (radioArray[i].checked) {
-            setNavItemChecked(navArray[i]);
+          navArray[i].classList.add("checked");
         } else {
-            unsetNavItemChecked(navArray[i]);
+          navArray[i].classList.remove("checked");
         }
     }
 }
@@ -38,28 +28,44 @@ function manuallyScroll(carousel, numberOfTheSlide, width) {
     carousel.scrollLeft = numberOfTheSlide*width;
 }
 
-async function loopSlides(viewport, carousel, list, navArray, radioArray) {
-    for (let i = 0; i < list.length; i++) {
-        await sleep(4000);
-        //console.log(list[i]);
-        const isLast = i === list.length -1 ? true : false;
-        const hovered = checkHoverStatus(viewport);
-        if (!hovered) {
-            scrollToNextSlide(carousel, list[i], isLast);
-            const nextButton = isLast ? radioArray[0] : radioArray[i+1];
-            nextButton.checked = true;
-            updateNavigation(navArray, radioArray);
-        }
-        if (isLast) {
-            i = -1; // i++ makes it 0 at the end of the loop
-        }    
+function checkNavigationState(radioArray) {
+  for (let i = 0; i < radioArray.length; i++) {
+    if (radioArray[i].checked) {
+      return i;
     }
+  }
+}
+
+function* loopSlides(carousel, list, navArray, radioArray) {
+    for (let i = 0; i < list.length; i++) {
+        i = checkNavigationState(radioArray);
+        const isLast = i === list.length -1 ? true : false;
+        scrollToNextSlide(carousel, list[i], isLast);
+        const nextButton = isLast ? radioArray[0] : radioArray[i+1];
+        nextButton.checked = true;
+        updateNavigation(navArray, radioArray);
+        if (isLast) {
+            i = -1;
+        }
+        yield i; 
+    }
+}
+
+async function slider(viewport, slidesIterator) {
+  while(true) {
+    await sleep(4000);
+    const hovered = checkHoverStatus(viewport);
+    if (!hovered) {
+      slidesIterator.next().value;
+    }
+  }
 }
 
 const slidesArray = document.getElementsByClassName("slide");
 const navArray = document.getElementsByClassName("slider-nav-item");
 const radioArray = document.getElementsByClassName("slider-nav-button");
 const carousel = document.getElementById("slider");
+const slidesIterator = loopSlides(carousel, slidesArray, navArray, radioArray);
 const viewport = document.getElementById("viewport-wrap");
 
 for (let i = 0; i < radioArray.length; i++) {
@@ -69,15 +75,4 @@ for (let i = 0; i < radioArray.length; i++) {
     });
 }
 
-console.log(carousel);
-console.log(slidesArray);
-
-/*while(true) {
-    await sleep(4000);
-    const hovered = checkHoverStatus(viewport);
-    if (!hovered) {
-        console.log(loopSlides.next().value);
-    }
-}*/
-
-loopSlides(viewport, carousel, slidesArray, navArray, radioArray);
+slider(viewport, slidesIterator);
