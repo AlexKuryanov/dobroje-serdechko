@@ -321,7 +321,7 @@ img {
 .slide-wrap {
   display: inline-block;
   position: relative;
-  margin: 5rem;
+  margin: 6rem;
 }
 
 .slide {
@@ -330,7 +330,7 @@ img {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  gap: 14rem; /* 140px / 1520px */
+  gap: 14rem;   /* 140px / 1520px */
   border-radius: 1rem;
   position: relative;
   scroll-snap-align: center;
@@ -342,10 +342,10 @@ img {
 
 .slider-nav {
   display: flex;
-  gap: 0.5rem;
+  gap: 1.8rem;
   position: absolute;
-  bottom: -5rem;
-  left: -20rem;
+  bottom: 0;
+  left: -5rem;
   right: 0;
   justify-content: center;
 }
@@ -401,8 +401,8 @@ img {
   width: 82rem;
 */
   z-index: 1;
-  /* width: 800px; /* 800px / 1520px = 52.6315% */
- /* height: 589px;*/
+  width: 730px; /* 800px / 1520px = 52.6315% */
+  height: 589px;
   border-radius: 1rem;
 }
 
@@ -413,7 +413,6 @@ img {
   align-items: center;
   row-gap: 2rem;
   height: 58.9rem;
-  margin-left: auto;
   padding-block: 3rem;
   padding-inline: 3.5rem;
   font-size: 2.5rem;
@@ -1473,24 +1472,21 @@ video {
   .tohelp-btn {
     padding-inline: 3.9rem;
   }
-  
-  .slider-container {
-    max-width: 155rem;
-    left: -9.9rem;
-    /*margin-right: 9.9rem;*/
-  }
-/*
-  .slider {
-    aspect-ratio: 1519 / 910;
-  }
-*/
+
   .slide {
-    column-gap: 8.5rem;
+    column-gap: 4.5rem;
+    justify-content: unset;
   }
 
+  .slider-nav {
+    bottom: -1.7rem;
+  }
+
+  .slide-wrap {
+    margin: 4rem;
+  }
   .article-content {
-    min-width: 52.6rem;
-    max-width: 52.6rem;
+    width: 42.1rem;
   }
 
   .team-members {
@@ -1572,7 +1568,6 @@ video {
   }
 
 
-/*
   .tohelp-btn {
     align-self: center;
   }
@@ -1582,25 +1577,20 @@ video {
     line-height: 100%;
   }
 
-  .slider {
-    aspect-ratio: 1519 / 1900;
-  }
-
   .slide {
     flex-direction: column;
-    row-gap: 20px;
-    overflow: hidden;
+    row-gap: 20px
   }
 
   .article-img {
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 90%;
   }
 
   .article-content {
-    width: 100%;
+    width: 90%;
   }
-*/
+
   .links-list {
     justify-content: center;
     flex-wrap: wrap;
@@ -1918,5 +1908,15 @@ video {
     position: absolute;
     right: 1.5rem;
     bottom: 35.5rem;
+  }
+
+  .article-img {
+    width: 34.9rem;
+    height: 28.1rem;
+  }
+
+  .article-content {
+    width: 34.9rem;
+    height: max-content;
   }
 }
