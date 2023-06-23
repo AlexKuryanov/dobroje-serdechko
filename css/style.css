@@ -1375,7 +1375,8 @@ video {
 }
 
 /* Media queries */
-@media (min-width: 1270px) and (max-width: 1600px) {
+/* @media (min-width: 1270px) and (max-width: 1600px)  */
+@media (max-width: 1600px) {
   .container {
     max-width: 124rem;
   }
@@ -1453,15 +1454,15 @@ video {
     display: none;
   }
 }
-
-@media (min-width: 769px) and (max-width: 1269px) {
+/* @media screen and (min-width: 769px) and (max-width: 1269px) */
+@media (max-width: 1269px) {
   .container {
     max-width: 76.9rem;
     box-sizing: content-box;
   }
 
   .page-nav {
-    padding: 1rem;
+    padding: 2rem;
   }
 
   .mob-hide {
@@ -1717,8 +1718,8 @@ video {
   }
 
   .video-humanitarian {
-    max-width: 640px;
-    max-height: 430px;
+    max-width: 64rem;
+    max-height: 43rem;
   }
 
   .btn-grid-container {
@@ -1756,7 +1757,86 @@ video {
 
   .humanitarian-center .grid-knowmore {
     position: absolute;
-    right: 45px;
-    bottom: 415px;
+    right: 4.5rem;
+    bottom: 41.5rem;
+  }
+}
+
+/* @media (min-width: 320px) and (max-width: 768px)  */
+@media (max-width: 768px) {
+  .page-body {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+  }
+
+  .container {
+    max-width: 35rem;
+    min-width: 32rem;
+  }
+
+  .header-container {
+    grid-template-columns: 176px 1fr;
+  }
+
+  .inner .page-nav {
+    display: block;
+    top: 0;
+  }
+
+  .page-title {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+  }
+
+  .inner .logo {
+    text-decoration: none;
+  }
+
+  .inner .header-container {
+    align-items: center;
+  }
+
+  .inner .burger {
+    width: 4.2rem;
+    height: 4.2rem;
+    justify-self: end;
+  }
+
+  .humanitarian-title,
+  .section-title-small {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    text-align: left;
+  }
+
+  .humanitarian-intro {
+    margin-bottom: 2rem;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+  }
+
+  .video-humanitarian {
+    max-width: 35rem;
+    max-height: 22.1rem;
+  }
+
+  .btn-grid-container {
+    grid-template-columns: 1fr;
+    row-gap: 5rem;
+  }
+
+  .grid-knowmore {
+    grid-row: 1 / 2;
+    justify-self: end;
+  }
+
+  .grid-pic1 img {
+    width: 100%;
+  }
+
+  .humanitarian-center .grid-knowmore {
+    position: absolute;
+    right: 1.5rem;
+    bottom: 35.5rem;
   }
 }
