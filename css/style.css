@@ -266,6 +266,10 @@ img {
   display: none;
 }
 
+.burger {
+  display: none;
+}
+
 .nav-container {
   display: grid;
   grid-template-columns: 1fr max-content;
@@ -477,7 +481,6 @@ input[type="radio"] {
 }
 
 .links-item {
-  flex: 0 0 376px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -795,6 +798,10 @@ button[type="submit"] {
 .partner-btn {
   color: var(--basic-white);
   background-color: var(--violet-blue);
+}
+
+.gratitude-text {
+  display: none;
 }
 
 /* Forpartners section */
@@ -1462,7 +1469,7 @@ video {
   }
 
   .page-nav {
-    padding: 2rem;
+    padding: 1rem;
   }
 
   .mob-hide {
@@ -1489,7 +1496,7 @@ video {
     margin-right: 1rem;
   }
 
-  .nav-item:not(:nth-last-child(n + 2)) {
+  .nav-item:not(:nth-last-child(-n + 2)) {
     margin-bottom: 1rem;
   }
 
@@ -1636,6 +1643,7 @@ video {
   }
 
   .inner .burger {
+    display: block;
     justify-self: end;
   }
 
@@ -1692,7 +1700,7 @@ video {
   }
 
   .programms-img {
-    grid-row: 2 / 3;
+    grid-row: 3 / 4;
     text-align: center;
   }
 
@@ -1771,11 +1779,134 @@ video {
 
   .container {
     max-width: 35rem;
-    min-width: 32rem;
   }
 
   .header-container {
     grid-template-columns: 176px 1fr;
+  }
+
+  .page-header {
+    background-color: var(--basic-white);
+  }
+
+  .header-links-bar {
+    display: none;
+  }
+
+  .page-nav {
+    display: none;
+    padding: 2rem;
+  }
+
+  .burger {
+    display: block;
+    width: 4.2rem;
+    height: 4.2rem;
+    justify-self: end;
+  }
+
+  .section-title {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .tohelp-title {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+
+  .section-intro {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+  }
+
+  .humanitarian-title,
+  .section-title-small {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    text-align: left;
+  }
+
+  button[type="submit"] {
+    justify-self: auto;
+  }
+
+  .agreement {
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 1.2rem;
+  }
+
+  .team-title {
+    text-align: center;
+  }
+
+  .team-intro {
+    text-align: left;
+  }
+
+  .cta-block {
+    flex-wrap: wrap;
+    row-gap: 1rem;
+  }
+
+  .card:nth-child(2) {
+    display: none;
+  }
+
+  .gratitude-text {
+    display: block;
+    font-size: 2rem;
+    font-family: Aqum, "Comic Sans", cursive;
+    font-weight: 900;
+    line-height: 2.4rem;
+  }
+
+  .cta-btns .partner-btn {
+    display: none;
+  }
+
+  .forpartners-title {
+    margin-bottom: 1rem;
+  }
+
+  .forpartners-intro {
+    margin-bottom: 2rem;
+    padding-left: 2.1rem;
+  }
+
+  .forpartners-cta-block .cta-text {
+    min-width: 100%;
+  }
+
+  .cta-subtitle {
+    margin-bottom: 2.5rem;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+  }
+
+  .contacts-info {
+    grid-template-columns: 1fr;
+    justify-content: start;
+  }
+
+  .kind-heart-contacts {
+    padding-left: 0;
+  }
+
+  .humanitarian-center-contacts {
+    padding-left: 0;
+  }
+
+  .socials {
+    padding-left: 0;
+  }
+
+  .footer-nav-link {
+    font-size: 1.4rem;
+    font-family: Roboto, Helvetica, sans-serif;
+    line-height: 1.6rem;
   }
 
   .inner .page-nav {
@@ -1794,19 +1925,6 @@ video {
 
   .inner .header-container {
     align-items: center;
-  }
-
-  .inner .burger {
-    width: 4.2rem;
-    height: 4.2rem;
-    justify-self: end;
-  }
-
-  .humanitarian-title,
-  .section-title-small {
-    font-size: 2.5rem;
-    line-height: 3rem;
-    text-align: left;
   }
 
   .humanitarian-intro {
@@ -1838,5 +1956,80 @@ video {
     position: absolute;
     right: 1.5rem;
     bottom: 35.5rem;
+  }
+
+  .links-border {
+    width: 19.6rem;
+    height: 12.3rem;
+  }
+
+  .link-bg {
+    width: 19rem;
+    height: 12.3rem;
+  }
+
+  .links-link {
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    width: 14rem;
+    height: 4.6rem;
+    padding-top: 4rem;
+  }
+
+  .footer-container {
+    justify-content: flex-start;
+    column-gap: 2rem;
+  }
+
+  .footer-nav-list {
+    flex-flow: column wrap;
+    max-height: 25rem;
+  }
+
+  .footer-nav-item {
+    order: 0;
+  }
+
+  .footer-nav-item:last-child {
+    order: 1;
+  }
+
+  .footer-nav-item:nth-last-child(2) {
+    order: 4;
+  }
+
+  .footer-nav-item:nth-last-child(3) {
+    order: 3;
+  }
+
+  .footer-nav-item:nth-last-child(4) {
+    order: 2;
+  }
+
+  .fund-name {
+    font-size: 2rem;
+    line-height: 2.4rem;
+  }
+
+  .inner .section-title-small {
+    font-size: 2rem;
+    line-height: 2.4rem;
+  }
+
+  .text-block-1 .section-text:last-child {
+    margin-bottom: 0;
+  }
+
+  .programms-container {
+    row-gap: 2rem;
+  }
+
+  .programms-img img {
+    width: 34.3rem;
+    height: 19.3rem;
+  }
+
+  .text-block-3 {
+    flex-direction: column;
   }
 }
