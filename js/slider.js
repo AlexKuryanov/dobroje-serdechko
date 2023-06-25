@@ -24,8 +24,8 @@ function updateNavigation(navArray, radioArray) {
     }
 }
 
-function manuallyScroll(carousel, numberOfTheSlide, width) {
-    carousel.scrollLeft = numberOfTheSlide*width;
+function manuallyScroll(carousel, scrollLength) {
+    carousel.scrollLeft = scrollLength;
 }
 
 function checkNavigationState(radioArray) {
@@ -65,13 +65,16 @@ const slidesArray = document.getElementsByClassName("slide");
 const navArray = document.getElementsByClassName("slider-nav-item");
 const radioArray = document.getElementsByClassName("slider-nav-button");
 const carousel = document.getElementById("slider");
-const slidesIterator = loopSlides(carousel, slidesArray, navArray, radioArray);
+const slideWrap = document.getElementsByClassName("slide-wrap");
+const slidesIterator = loopSlides(carousel, slidesArray, navArray, radioArray, slideWrap);
 const viewport = document.getElementById("viewport-wrap");
 
 for (let i = 0; i < radioArray.length; i++) {
     radioArray[i].addEventListener("click", (e) => {
+        const margin = parseInt(window.getComputedStyle(slideWrap[0], null).margin);
+        const scrollLength = i*(slidesArray[i].offsetWidth + 2*margin)
+        manuallyScroll(carousel, scrollLength);
         updateNavigation(navArray, radioArray);
-        manuallyScroll(carousel, i, slidesArray[0].offsetWidth);
     });
 }
 
