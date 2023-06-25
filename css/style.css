@@ -304,7 +304,7 @@ img {
 .slider {
   width: 100%;
   position: relative;
-  overflow-x: scroll;
+  overflow-x: hidden;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   scrollbar-width: 0;
