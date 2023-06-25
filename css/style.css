@@ -334,7 +334,7 @@ img {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  gap: 14rem;   /* 140px / 1520px */
+  gap: 14rem; /* 140px / 1520px */
   border-radius: 1rem;
   position: relative;
   scroll-snap-align: center;
@@ -394,7 +394,7 @@ img {
   align-items: center;
 
   /* TODO - define column-gap */
-  /*column-gap: 14rem;
+/*column-gap: 14rem;
 
   border-radius: 1rem;
 }*/
@@ -1574,7 +1574,6 @@ video {
     margin-bottom: 1rem;
   }
 
-
   .tohelp-btn {
     align-self: center;
   }
@@ -1586,7 +1585,7 @@ video {
 
   .slide {
     flex-direction: column;
-    row-gap: 20px
+    row-gap: 20px;
   }
 
   .article-img {
@@ -2027,7 +2026,7 @@ video {
     right: 1.5rem;
     bottom: 35.5rem;
   }
-  
+
   .article-img {
     width: 34.9rem;
     height: 28.1rem;
@@ -2037,7 +2036,6 @@ video {
     width: 34.9rem;
     height: max-content;
   }
-}
 
   .links-border {
     width: 19.6rem;
