@@ -697,15 +697,17 @@ button[type="submit"] {
 }
 
 .cards-swiper {
+  overflow: hidden;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-wrap: nowrap;
+  justify-content: start;
   align-items: center;
   column-gap: 14.5rem;
   margin-bottom: 3rem;
 }
 
 .card {
+  user-select: none;
   max-width: 27rem;
   min-height: 30rem;
   padding-block: 1.5rem;
