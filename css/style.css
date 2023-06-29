@@ -569,7 +569,7 @@ input[type="radio"] {
 .gethelp-questions,
 .gethelp-agreement {
   margin: 0;
-  padding-left: 8.2rem;
+  padding-left: 6.2rem;
   color: var(--basic-black);
 }
 
@@ -952,7 +952,6 @@ button[type="submit"] {
 .footer-nav-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   max-width: 87.2rem;
   gap: 2.2rem 1.8rem;
 }
@@ -1489,7 +1488,7 @@ video {
     margin-right: 1rem;
   }
 
-  .nav-item:not(:nth-last-child(-n + 2)) {
+  .nav-item {
     margin-bottom: 1rem;
   }
 
@@ -1552,9 +1551,9 @@ video {
     column-gap: 2rem;
   }
 
-  .card:nth-last-child(-n + 2) {
+  /* .card:not(:nth-child(n + 2)) {
     display: none;
-  }
+  } */
 
   .cta-btns {
     justify-content: space-between;
@@ -1754,6 +1753,12 @@ video {
   }
 }
 
+@media (min-width: 769px) and (max-width: 775px) {
+  .nav-item:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+  }
+}
+
 @media (max-width: 768px) {
   .page {
     scroll-padding-top: 10rem;
@@ -1773,7 +1778,7 @@ video {
   }
 
   .header-container {
-    grid-template-columns: 176px 1fr;
+    grid-template-columns: 180px 1fr;
   }
 
   .page-header {
