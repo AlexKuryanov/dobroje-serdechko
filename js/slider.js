@@ -3,7 +3,7 @@ function sleep(ms) {
 }
 
 function checkHoverStatus(carousel) {
-    return carousel.matches(":focus") || carousel.matches(":hover");
+    return carousel.matches(":focus") || carousel.matches(":hover") || scrolling;
 }
 
 function scrollToNextSlide(carousel, element, isLast) {
@@ -76,6 +76,7 @@ const carousel = document.getElementById("slider");
 const slideWrap = document.getElementsByClassName("slide-wrap");
 const slidesIterator = loopSlides(carousel, slidesArray, navArray, radioArray, slideWrap);
 const viewport = document.getElementById("viewport-wrap");
+let scrolling = false;
 
 for (let i = 0; i < radioArray.length; i++) {
     radioArray[i].addEventListener("click", (e) => {
@@ -86,8 +87,13 @@ for (let i = 0; i < radioArray.length; i++) {
     });
 }
 
+carousel.addEventListener('scroll', (e) => {
+  scrolling = true;
+});
+
 carousel.addEventListener('scrollend', (e) => {
   updateScroll(carousel, slidesArray, slideWrap, navArray, radioArray);
+  scrolling = false
 });
 
 slider(viewport, slidesIterator);
