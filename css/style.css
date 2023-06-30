@@ -696,8 +696,14 @@ button[type="submit"] {
   line-height: 150%;
 }
 
+.cards-swiper::-webkit-scrollbar {
+  width: 0;
+}
+
 .cards-swiper {
-  overflow: hidden;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow: scroll;
   display: flex;
   flex-wrap: nowrap;
   justify-content: start;
