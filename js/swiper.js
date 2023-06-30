@@ -33,35 +33,7 @@ cards.forEach((card) => {
     });
 });
 
-if ('onscrollend' in window) {
-    prevBtn.disabled = true;
-    prevBtn.classList.add('btn-inactive');
-} else {
-    cardsSwiper.addEventListener('scroll', (e) => {
-        const maxScroll = cardsSwiper.scrollWidth - cardsSwiper.clientWidth;
-        if (cardsSwiper.scrollLeft != 0 && cardsSwiper.scrollLeft < maxScroll) {
-            prevBtn.classList.remove('btn-inactive');
-            nextBtn.classList.remove('btn-inactive');
-            prevBtn.disabled = false;
-            nextBtn.disabled = false;
-        }
-        if (cardsSwiper.scrollLeft === 0) {
-            prevBtn.classList.add('btn-inactive');
-            prevBtn.disabled = true;
-            nextBtn.disabled = false;
-            nextBtn.classList.remove('btn-inactive');
-        }
-        
-        if (cardsSwiper.scrollLeft >= maxScroll) {
-            nextBtn.classList.add('btn-inactive');
-            nextBtn.disabled = true;
-            prevBtn.disabled = false;
-            prevBtn.classList.remove('btn-inactive');
-        }
-    });
-}
-
-cardsSwiper.addEventListener('scrollend', (e) => {
+function swiperButtonsHandler(e) {
     const maxScroll = cardsSwiper.scrollWidth - cardsSwiper.clientWidth;
     if (cardsSwiper.scrollLeft != 0 && cardsSwiper.scrollLeft < maxScroll) {
         prevBtn.classList.remove('btn-inactive');
@@ -82,11 +54,17 @@ cardsSwiper.addEventListener('scrollend', (e) => {
         prevBtn.disabled = false;
         prevBtn.classList.remove('btn-inactive');
     }
-});
+}
+
+if ('onscrollend' in window) {
+    console.log('everything works fine');
+    cardsSwiper.addEventListener('scrollend', swiperButtonsHandler);
+} else {
+    cardsSwiper.addEventListener('scroll', swiperButtonsHandler);
+}
 
 
 prevBtn.addEventListener('click', (e) => {
-    console.log('prev click');
     cardsSwiper.classList.add('scroll-container');
     const gap = parseInt(window.getComputedStyle(cardsSwiper, null).columnGap);
     cardsSwiper.scrollLeft -= (parseInt(window.getComputedStyle(cards[0], null).width) + gap);
