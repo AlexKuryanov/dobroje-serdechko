@@ -325,6 +325,8 @@ img {
 
 .slider::-webkit-scrollbar {
   width: 0;
+  height: 0;
+  display: none;
 }
 
 .slides {
@@ -699,6 +701,8 @@ button[type="submit"] {
 
 .cards-swiper::-webkit-scrollbar {
   width: 0;
+  height: 0;
+  display: none;
 }
 
 .cards-swiper {
