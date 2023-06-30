@@ -705,6 +705,15 @@ button[type="submit"] {
   display: none;
 }
 
+.btn-inactive {
+  pointer-events: none;
+  opacity: 0.35;
+}
+
+.scroll-container {
+  scroll-behavior: smooth;
+}
+
 .cards-swiper {
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -727,6 +736,10 @@ button[type="submit"] {
   box-sizing: border-box;
   border-radius: 1rem;
   cursor: grab;
+}
+
+.grabbing {
+  cursor: grabbing;
 }
 
 .card-title {
