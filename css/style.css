@@ -314,12 +314,13 @@ img {
 /* Slider */
 
 .slider {
+  -ms-overflow-style: none;
   width: 100%;
   position: relative;
-  overflow-x: hidden;
+  overflow-x: scroll;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
-  scrollbar-width: 0;
+  scrollbar-width: none;
 }
 
 .slider::-webkit-scrollbar {
