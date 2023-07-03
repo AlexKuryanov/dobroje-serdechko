@@ -2085,6 +2085,15 @@ legend {
     justify-self: auto;
   }
 
+  .gethelp-label {
+    margin-bottom: 0.5rem;
+  }
+
+  .form-message {
+    height: 8rem;
+    margin-bottom: 1rem;
+  }
+
   .agreement {
     font-weight: 300;
     font-size: 1rem;
