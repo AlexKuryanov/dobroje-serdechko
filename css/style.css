@@ -1568,6 +1568,7 @@ legend {
   .slide-wrap {
     margin: 4rem;
   }
+
   .article-content {
     width: 42.1rem;
   }
@@ -1752,10 +1753,6 @@ legend {
     row-gap: 2rem;
     column-gap: 2rem;
   }
-
-  /* .card:not(:nth-child(n + 2)) {
-    display: none;
-  } */
 
   .cta-btns {
     justify-content: space-between;
