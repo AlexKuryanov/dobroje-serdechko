@@ -2020,7 +2020,8 @@ legend {
     display: block;
   }
 
-  .email-link {
+  .mobile-menu .email-link {
+    font-family: Roboto, Helvetica, sans-serif;
     text-transform: lowercase;
     text-decoration: underline;
   }
