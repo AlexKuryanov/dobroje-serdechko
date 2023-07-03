@@ -300,6 +300,7 @@ img {
   padding-inline: 5.2rem;
   padding-bottom: 1.1rem;
   background-color: var(--red);
+  border: none;
 }
 
 /* Tohelp section */
