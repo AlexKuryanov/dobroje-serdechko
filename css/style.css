@@ -315,16 +315,19 @@ img {
 /* Slider */
 
 .slider {
+  -ms-overflow-style: none;
   width: 100%;
   position: relative;
-  overflow-x: hidden;
+  overflow-x: scroll;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
-  scrollbar-width: 0;
+  scrollbar-width: none;
 }
 
 .slider::-webkit-scrollbar {
   width: 0;
+  height: 0;
+  display: none;
 }
 
 .slides {
@@ -697,8 +700,25 @@ button[type="submit"] {
   line-height: 150%;
 }
 
+.cards-swiper::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  display: none;
+}
+
+.btn-inactive {
+  pointer-events: none;
+  opacity: 0.35;
+}
+
+.scroll-container {
+  scroll-behavior: smooth;
+}
+
 .cards-swiper {
-  overflow: hidden;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow: scroll;
   display: flex;
   flex-wrap: nowrap;
   justify-content: start;
@@ -717,6 +737,10 @@ button[type="submit"] {
   box-sizing: border-box;
   border-radius: 1rem;
   cursor: grab;
+}
+
+.grabbing {
+  cursor: grabbing;
 }
 
 .card-title {

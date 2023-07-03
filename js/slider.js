@@ -3,7 +3,7 @@ function sleep(ms) {
 }
 
 function checkHoverStatus(carousel) {
-    return carousel.matches(":focus") || carousel.matches(":hover");
+    return carousel.matches(":focus") || carousel.matches(":hover") || scrolling;
 }
 
 function scrollToNextSlide(carousel, element, isLast) {
@@ -26,6 +26,14 @@ function updateNavigation(navArray, radioArray) {
 
 function manuallyScroll(carousel, scrollLength) {
     carousel.scrollLeft = scrollLength;
+}
+
+function updateScroll(carousel, slidesArray, slideWrap, navArray, radioArray) {
+  const margin = parseInt(window.getComputedStyle(slideWrap[0], null).margin);
+  const i = Math.round(carousel.scrollLeft / (slidesArray[0].offsetWidth + 2*margin));
+  radioArray[i].checked = true;
+  updateNavigation(navArray, radioArray);
+  console.log(i);
 }
 
 function checkNavigationState(radioArray) {
@@ -68,14 +76,24 @@ const carousel = document.getElementById("slider");
 const slideWrap = document.getElementsByClassName("slide-wrap");
 const slidesIterator = loopSlides(carousel, slidesArray, navArray, radioArray, slideWrap);
 const viewport = document.getElementById("viewport-wrap");
+let scrolling = false;
 
 for (let i = 0; i < radioArray.length; i++) {
     radioArray[i].addEventListener("click", (e) => {
         const margin = parseInt(window.getComputedStyle(slideWrap[0], null).margin);
-        const scrollLength = i*(slidesArray[i].offsetWidth + 2*margin)
+        const scrollLength = i*(slidesArray[i].offsetWidth + 2*margin);
         manuallyScroll(carousel, scrollLength);
         updateNavigation(navArray, radioArray);
     });
 }
+
+carousel.addEventListener('scroll', (e) => {
+  scrolling = true;
+});
+
+carousel.addEventListener('scrollend', (e) => {
+  updateScroll(carousel, slidesArray, slideWrap, navArray, radioArray);
+  scrolling = false
+});
 
 slider(viewport, slidesIterator);
