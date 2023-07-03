@@ -232,4 +232,95 @@
     <script src="js/main.js" type="module"></script>
     <!-- scripts end -->
   </body>
+  <!-- Modals start -->
+  <!-- Volunteer modal -->
+  <section class="modal modal-volunteer">
+    <h2 class="section-title visually-hidden">Volunteer form</h2>
+    <button class="modal-close" type="button" aria-label="Закрыть">
+      <img
+        class="modal-close-pic"
+        src="assets/images/icons/burger-close.svg"
+        alt=""
+      />
+    </button>
+    <p class="modal-intro">
+      готов стать членом дружной команды, давай&nbsp;знакомиться!
+    </p>
+    <p class="modal-text">Заполни эту форму, заяви о своём желании помочь!</p>
+    <form action="">
+      <input
+        class="form-input"
+        type="text"
+        name="volunteer-name"
+        id="volunteer-name"
+        placeholder="Фамилия, Имя"
+      />
+      <input
+        class="form-input"
+        type="email"
+        name="volunteer-email"
+        id="volunteer-email"
+        placeholder="e-mail"
+      />
+      <input
+        class="form-input volunteer-phone"
+        type="tel"
+        name="volunteer-phone"
+        id="volunteer-phone"
+        placeholder="+7 (_ _ _) _ _ _ - _ _  - _ _"
+      />
+      <button class="btn btn-outline cta-btn" type="submit">
+        стать волонтёром
+      </button>
+      <p class="agreement">
+        Нажимая на кнопку, Вы соглашаетесь с
+        <a class="agreement-link policy" href=""
+          >Политикой конфиденциальности</a
+        >
+        <br />
+        и даёте согласие на
+        <a class="agreement-link personal-data" href=""
+          >обработку персональных данных</a
+        >
+      </p>
+    </form>
+  </section>
+  <!-- Responses -->
+  <section class="modal modal-response modal-response-volunteer">
+    <h2 class="visually-hidden">Response for partner</h2>
+    <button class="modal-close" type="button" aria-label="Закрыть">
+      <img
+        class="modal-close-pic"
+        src="assets/images/icons/burger-close.svg"
+        alt=""
+      />
+    </button>
+    <p class="response-text">Добро пожаловать в нашу команду!</p>
+    <p class="response-text">Мы свяжемся с тобой в ближайшее время!</p>
+  </section>
+  <section class="modal modal-response modal-response-partner">
+    <h2 class="visually-hidden">Response for partner</h2>
+    <button class="modal-close" type="button" aria-label="Закрыть">
+      <img
+        class="modal-close-pic"
+        src="assets/images/icons/burger-close.svg"
+        alt=""
+      />
+    </button>
+    <p class="response-text">Давайте действовать вместе!</p>
+    <p class="response-text">Мы свяжемся с вами в ближайшее время!</p>
+  </section>
+  <!-- Cookies -->
+  <section class="modal modal-cookies">
+    <h2 class="visually-hidden">Cookies</h2>
+    <p class="cookies-text">
+      Для улучшения работы сайта и его взаимодействия с пользователями мы
+      используем cookie-файлы.<br />
+      Продолжая работу с сайтом, вы разрешаете использование cookie-файлов.
+      Пожалуйста, чтобы узнать больше,
+      <a class="politic" href="#">ознакомьтесь с Политикой</a>.
+    </p>
+    <button class="btn cookies-btn" type="button">Понятно</button>
+  </section>
+  <!-- Modals end -->
 </html>

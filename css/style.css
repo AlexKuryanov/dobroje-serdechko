@@ -1332,6 +1332,207 @@ video {
   max-width: max-content;
 }
 
+/* Modals */
+.modal {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 100rem;
+  height: 60rem;
+  margin: 0 auto;
+  padding: 4rem 5rem;
+  font-weight: 400;
+  color: var(--black);
+  background-color: var(--basic-white);
+  border-radius: 5px;
+  border: 1px solid var(--violet-main);
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+  box-sizing: border-box;
+  transform: translateY(-50%);
+  z-index: 15;
+}
+
+.modal-donation {
+  display: none;
+  background: radial-gradient(
+    circle at bottom 50px right 100px,
+    rgba(151, 162, 225, 1) 30%,
+    rgba(255, 255, 255, 1) 70%
+  );
+}
+
+.modal-close {
+  position: absolute;
+  top: 3.6rem;
+  right: 5rem;
+  width: 4.2rem;
+  height: 4.2rem;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+.modal-intro {
+  margin: 0;
+  margin-bottom: 3rem;
+  font-family: Aqum, "Comic Sans", cursive;
+  font-size: 2.5rem;
+}
+
+fieldset {
+  margin-bottom: 3rem;
+  padding: 0;
+  border: 0;
+}
+
+legend {
+  margin-bottom: 2.4rem;
+}
+
+.user-data {
+  margin: 0;
+}
+
+.amount-btns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  column-gap: 10.5rem;
+  row-gap: 1.6rem;
+}
+
+.amount-btn {
+  min-width: 13.6rem;
+  padding: 1rem 2rem;
+  border-radius: 0.4rem;
+  border: 0.1rem solid var(--dark-gray);
+  background-color: var(--basic-white);
+  box-sizing: border-box;
+}
+
+.another-amount-btn {
+  min-width: 39rem;
+}
+
+.user-data {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 11.8rem;
+}
+
+.form-input {
+  border-radius: 0.4rem;
+  border: 0.1rem solid var(--dark-gray);
+}
+
+.form-checkboxes label {
+  font-size: 1.6rem;
+}
+
+.pay-methods {
+  float: right;
+}
+
+.pay-methods img:not(:last-child) {
+  margin-right: 2.6rem;
+}
+
+.modal-volunteer {
+  display: none;
+  background: radial-gradient(
+    circle at bottom 70px left 100px,
+    rgba(151, 162, 225, 1) 30%,
+    rgba(255, 255, 255, 1) 70%
+  );
+}
+
+.modal-volunteer .modal-intro {
+  line-height: 3.6rem;
+}
+
+.modal-volunteer .modal-text {
+  margin-bottom: 2.5rem;
+  color: var(--basic-black);
+}
+
+.volunteer-phone {
+  margin-bottom: 7rem;
+}
+
+.modal-volunteer .agreement {
+  padding-left: 4.5rem;
+}
+
+.modal-cookies {
+  display: none;
+  max-width: 83.9rem;
+  max-height: 25rem;
+  background: url("../assets/images/content/bg-modal-heart.png") top 8px left
+      22px/ 104px 104px no-repeat,
+    radial-gradient(
+      circle at bottom -185px left 40%,
+      #daf1a0 55%,
+      rgba(255, 255, 255, 1) 80%
+    );
+}
+
+.cookies-text {
+  margin: 0;
+  margin-bottom: 3rem;
+}
+
+.cookies-btn {
+  display: block;
+  margin: 0 auto;
+  color: var(--violet-main);
+  background-color: var(--basic-white);
+  border: 0.3rem solid var(--violet-main);
+}
+/* Modals end */
+
+/* Responses */
+.modal-response {
+  padding-left: 13.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background: url("../assets/images/content/bg-modal-heart.png") top 165px left
+      70px/ 250px 250px no-repeat,
+    radial-gradient(
+      circle at bottom 10px left 100px,
+      rgba(151, 162, 225, 1) 37%,
+      rgba(255, 255, 255, 1) 73%
+    );
+}
+
+.modal-response-partner {
+  display: none;
+}
+
+.modal-response-tohelp {
+  display: none;
+}
+
+.modal-response-gethelp {
+  display: none;
+}
+
+.modal-response-volunteer {
+  display: none;
+}
+
+.response-text {
+  margin: 0;
+  margin-bottom: 1.2rem;
+  font-family: Aqum, "Comic Sans", cursive;
+  font-size: 2.8rem;
+  line-height: 3.6rem;
+}
+
 /* Media queries */
 @media (max-width: 1600px) {
   .container {
@@ -2064,5 +2265,131 @@ video {
 
   .text-block-3 {
     flex-direction: column;
+  }
+
+  /* Modals */
+  .modal {
+    width: 35rem;
+    height: 30.8rem;
+    padding: 2rem;
+    box-sizing: content-box;
+  }
+
+  .modal-close {
+    top: 1rem;
+    right: 1rem;
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+
+  .modal-intro {
+    margin-bottom: 1.6rem;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+  }
+
+  fieldset {
+    margin-bottom: 1.2rem;
+  }
+
+  legend {
+    margin-bottom: 0.8rem;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+  }
+
+  .amount-btns {
+    column-gap: 2rem;
+    row-gap: 1rem;
+  }
+
+  .amount-btn {
+    min-width: 3.7rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .user-data {
+    flex-direction: column;
+    row-gap: 0.8rem;
+  }
+
+  .form-input {
+    margin-bottom: 0;
+    padding-block: 0.5rem;
+  }
+
+  .form-checkboxes {
+    margin: 0;
+  }
+
+  .form-checkboxes label {
+    font-size: 1rem;
+  }
+
+  .form-checkboxes:last-child {
+    margin-bottom: 1.3rem;
+  }
+
+  .modal .btn {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    padding-inline: 2rem;
+    padding-block: 1rem;
+  }
+
+  .pay-method {
+    width: 3rem;
+    height: 1.9rem;
+  }
+
+  .pay-methods img:not(:last-child) {
+    margin-right: 1rem;
+  }
+
+  .modal-volunteer .modal-intro {
+    line-height: 1.6rem;
+  }
+
+  .modal-volunteer .form-input {
+    margin-bottom: 0.5rem;
+  }
+
+  .form-input.volunteer-phone {
+    margin-bottom: 2rem;
+  }
+
+  .modal-volunteer .agreement {
+    padding-left: 0;
+  }
+
+  .modal-cookies {
+    max-width: 27.4rem;
+    max-height: 18.5rem;
+    background: radial-gradient(
+      circle at bottom -185px left 40%,
+      #daf1a0 55%,
+      rgba(255, 255, 255, 1) 80%
+    );
+  }
+
+  .cookies-text {
+    margin-bottom: 1.4rem;
+  }
+
+  .modal-response {
+    padding-left: 3.2rem;
+    background: url("../assets/images/content/bg-modal-heart.png") top 23px left -7px/
+        250px 250px no-repeat,
+      radial-gradient(
+        circle at bottom 10px left 100px,
+        rgba(151, 162, 225, 1) 37%,
+        rgba(255, 255, 255, 1) 73%
+      );
+  }
+
+  .response-text {
+    padding-right: 0.5rem;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
   }
 }
