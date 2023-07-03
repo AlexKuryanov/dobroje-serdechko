@@ -1265,7 +1265,8 @@ video {
   margin: 2.7rem;
 }
 
-.video-humanitarian {
+.video-humanitarian,
+.video-events {
   max-width: 840px;
   max-height: 530px;
 }
@@ -1931,7 +1932,8 @@ legend {
     font-size: 3.5rem;
   }
 
-  .video-humanitarian {
+  .video-humanitarian,
+  .video-events {
     max-width: 64rem;
     max-height: 43rem;
   }
@@ -2180,7 +2182,8 @@ legend {
     line-height: 1.6rem;
   }
 
-  .video-humanitarian {
+  .video-humanitarian,
+  .video-events {
     max-width: 35rem;
     max-height: 22.1rem;
   }
