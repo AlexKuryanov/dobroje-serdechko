@@ -79,7 +79,7 @@
               <a class="link link-dark nav-link" href="#contacts">Контакты</a>
             </li>
           </ul>
-          <a class="btn tohelp-btn" href="#">хочу помочь</a>
+          <a class="btn tohelp-btn tohelp-btn-all" href="#donation">хочу помочь</a>
         </div>
       </nav>
       <nav class="mobile-menu">
@@ -149,7 +149,7 @@
             </a>
           </li>
         </ul>
-        <a class="btn tohelp-btn" href="#">хочу помочь</a>
+        <a class="btn tohelp-btn" href="#donation">хочу помочь</a>
       </div>
       </nav>
     </header>
@@ -907,7 +907,7 @@
   </body>
   <!-- Modals -->
   <!-- Donation modal -->
-<section class="modal modal-donation">
+<section class="modal modal-donation" id="donation">
   <h2 class="section-title visually-hidden">Donation</h2>
   <button class="modal-close" type="button" aria-label="Закрыть">
     <img
@@ -919,7 +919,7 @@
   <p class="modal-intro">
     Ваша помощь очень нужна!
   </p>
-  <form class="form-donation">
+  <form class="donation-form">
     <fieldset>
       <legend>Сумма пожертвования</legend>
     <div class="amount-btns">
@@ -933,8 +933,8 @@
   <fieldset>
     <legend>Личные данные</legend>
     <p class="user-data">
-      <input class="form-input" type="email" name="user-email" id="user-email" placeholder="Ваш e-mail">
-      <input class="form-input" type="text" name="user-name" id="user-name" placeholder="Ваши Фамилия, Имя">
+      <input class="form-input input-user-email" type="email" name="user-email" id="user-email" placeholder="Ваш e-mail">
+      <input class="form-input input-user-name" type="text" name="user-name" id="user-name" placeholder="Ваши Фамилия, Имя">
     </p>
   </fieldset>
   <p class="form-checkboxes">

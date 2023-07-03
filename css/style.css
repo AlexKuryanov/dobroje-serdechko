@@ -1361,6 +1361,7 @@ video {
 
 /* Modals */
 .modal {
+  display: none;
   position: fixed;
   top: 50%;
   right: 0;
@@ -1382,8 +1383,12 @@ video {
   z-index: 15;
 }
 
+.modal-show {
+  display: block;
+}
+
 .modal-donation {
-  display: none;
+  /* display: none; */
   background: radial-gradient(
     circle at bottom 50px right 100px,
     rgba(151, 162, 225, 1) 30%,
@@ -1438,6 +1443,7 @@ legend {
   border: 0.1rem solid var(--dark-gray);
   background-color: var(--basic-white);
   box-sizing: border-box;
+  cursor: pointer;
 }
 
 .another-amount-btn {
@@ -1468,7 +1474,7 @@ legend {
 }
 
 .modal-volunteer {
-  display: none;
+  /* display: none; */
   background: radial-gradient(
     circle at bottom 70px left 100px,
     rgba(151, 162, 225, 1) 30%,
@@ -1494,7 +1500,7 @@ legend {
 }
 
 .modal-cookies {
-  display: none;
+  /* display: none; */
   max-width: 83.9rem;
   max-height: 25rem;
   background: url("../assets/images/content/bg-modal-heart.png") top 8px left
