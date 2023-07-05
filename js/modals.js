@@ -48,16 +48,16 @@ closeBtns.forEach((closeBtn) => {
   });
 });
 
-donationForm.addEventListener("submit", function (e) {
-  if (!userEmail.value || !userName.value) {
-    e.preventDefault();
-  }
-  // else {
-  // if (isStorageSupport) {
-  // localStorage.setItem("user-email", userEmail.value);
-  // }
-  // }
-});
+// donationForm.addEventListener("submit", function (e) {
+// if (!userEmail.value || !userName.value) {
+//   e.preventDefault();
+// }
+// else {
+// if (isStorageSupport) {
+// localStorage.setItem("user-email", userEmail.value);
+// }
+// }
+// });
 
 window.addEventListener("keydown", function (e) {
   if (e.key === "Escape") {
